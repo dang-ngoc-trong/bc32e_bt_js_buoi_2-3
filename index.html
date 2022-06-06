@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bai tap JS Buoi 2-3</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- BÀI TẬP 1 -->
+    <div class="d-flex justify-content-center">
+      
+      <div class="border-danger card w-50" >
+        <div
+          class="card-header bg-danger text-light font-weight-bold text-center"
+        >
+          BÀI TẬP 1:Tính Tiền Lương Nhân Viên
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <input
+              class="form-control"
+              id="luongMotNgay"
+              placeholder="Nhập lương một ngày"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control"
+              id="soNgayLam"
+              placeholder="Số ngày làm"
+            />
+          </div>
+        </div>
+        <div class="card-footer text-center">
+          <button id="btnTinhTienLuong" class="btn btn-danger">
+            Tính Lương
+          </button>
+          <div
+            class="text-center"
+            id="xuatKetQua"
+            style="width: 100%; height: 40px; border: 1px solid green"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- BÀI TẬP 2 -->
+    <div class="d-flex justify-content-center">
+      <div class="card w-50" style="border-color:rgb(146, 146, 82) ;">
+        <div
+          class="card-header text-light font-weight-bold text-center" style="background-color: rgb(146, 146, 82);"
+        >
+          BÀI TẬP 2:Tính Gía Trị Trung Bình
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <input
+              class="form-control"
+              type="number"
+              min="-99"
+              max="999"
+              id="soThu1"
+              placeholder="Nhập số thứ 1"
+              i
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control"
+              type="number"
+              min="-99"
+              max="999"
+              id="soThu2"
+              placeholder="Nhập số thứ 2"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control"
+              type="number"
+              min="-99"
+              max="999"
+              id="soThu3"
+              placeholder="Nhập số thứ 3"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control"
+              type="number"
+              min="-99"
+              max="999"
+              id="soThu4"
+              placeholder="Nhập số thứ 4"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control"
+              type="number"
+              min="-99"
+              max="999"
+              id="soThu5"
+              placeholder="Nhập số thứ 5"
+            />
+          </div>
+        </div>
+        <div class="card-footer text-center">
+          <button id="trungBinh" class="btn" style="background-color: rgb(146, 146, 82);">Tinh Trung Bình</button>
+          <div
+            class="text-center"
+            id="xuatKetQua2"
+            style="width: 100%; height: 40px; border: 1px solid green"
+          ></div>
+        </div>
+      </div>
+
+    </div>
+    <br>
+    <!-- BÀI TẬP 3 -->
+    <div class="d-flex justify-content-center">
+      
+      <div class="card w-50" style="border-color:rgb(116, 182, 116) ;">
+        <div
+          class="card-header text-light font-weight-bold text-center" style="background-color: rgb(116, 182, 116);"
+        >
+          BÀI TẬP 3:Tính Tiền Lương Nhân Viên
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <input
+              class="form-control"
+              id="usd"
+              type="number"
+              min="-99"
+              max="999"
+              placeholder="Nhập số tiền USD"
+              
+            />
+          </div>
+          <div id="giaUsd" >
+        
+          </div>
+        </div>
+        <div class="card-footer text-center">
+          <button id="quyDoiTien" class="btn" style="background-color: rgb(116, 182, 116)">
+            Quy đổi tiền
+          </button>
+          <div
+            class="text-center"
+            id="xuatKetQua3"
+            style="width: 100%; height: 40px; border: 1px solid green"
+          ></div>
+        </div>
+      </div>
+
+    </div>
+    <br>
+    <!-- BÀI TẬP 4 -->
+    <div class="d-flex justify-content-center">
+      
+      <div class="border-primary card w-50">
+        <div
+          class="card-header bg-primary text-light font-weight-bold text-center"
+        >
+          BÀI TẬP 4:Tính Diện Tích,Chu Vi Hình Chữ Nhật
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <input
+              class="form-control"
+              id="chieuDai"
+              type="number"
+              min="1"
+              max="999"
+              placeholder="Nhập chiều dài"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control"
+              id="chieuRong"
+              type="number"
+              min="1"
+              max="999"
+              placeholder="Nhập chiều rộng"
+            />
+          </div>
+        </div>
+        <div class="card-footer text-center">
+          <button id="tinh" class="btn btn-primary">
+            Tính Lẹ
+          </button>
+          <div
+            class="text-center"
+            id="xuatKetQua4"
+            style="width: 100%; height: 40px; border: 1px solid green"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- BÀI TẬP 5 -->
+    <div class="d-flex justify-content-center">
+      
+      <div class="border-warning card w-50">
+        <div
+          class="card-header bg-warning text-light font-weight-bold text-center"
+        >
+          BÀI TẬP 5:Tính Tổng 2 Ký tự số
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <input
+              class="form-control"
+              id="so"
+              type="number"
+              placeholder="Nhập số có 2 chữ số"
+              
+            />
+         
+          </div>
+        </div>
+        <div class="card-footer text-center">
+          <button id="tinhTong" class="btn btn-warning">
+            Tính Tổng
+          </button>
+          <div
+            class="text-center"
+            id="xuatKetQua5"
+            style="width: 100%; height: 40px; border: 1px solid blue"
+          ></div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
